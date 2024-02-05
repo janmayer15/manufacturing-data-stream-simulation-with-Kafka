@@ -1,17 +1,16 @@
-import pandas as pd 
+import pandas as pd
 import numpy as np
 
- # read the dataset into python
-df = pd.read_csv('C:/Users/Jan/OneDrive - Technische Universität Berlin/Dokumente/awesome-hiwi-contributions/Belinda/kafka-python-code/data/wafer_data_sum_cpk.csv', delimiter=';')
+# read the dataset into python from a GitHub URL
+url = 'https://raw.githubusercontent.com/janmayer15/manufacturing-data-stream-simulation-with-Kafka/main/data/wafer_data_sum_cpk.csv'
+df = pd.read_csv(url, delimiter=';')
 # df = df.drop(columns=['Unnamed: 0'])
 
 def generate_message() -> dict:
-
     random_row = np.array(df.sample(n=1))
     random_row = random_row.tolist()
     
     return {
-        
         'response': random_row[0][1],
         'Cpk': random_row[0][2],
         'Cpk_class': random_row[0][3],
@@ -23,7 +22,5 @@ def generate_message() -> dict:
         'sum_sensor5': random_row[0][9],
         'sum_sensor7': random_row[0][10],
         'sum_sensor49': random_row[0][11]
-
     }
-
 
