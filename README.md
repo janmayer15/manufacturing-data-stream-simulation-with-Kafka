@@ -65,7 +65,7 @@ After selecting "Control Center Cluster," you will see a list of available optio
 
 Within the Topics section, click on the "Add Topic" button to create a new topic for the manufacturing data stream simulation.
 
-![Screen_Add Topic](/images/Screen_Add Topic.png)
+![Screen_Add_Topic](/images/Screen_Add_Topic.png)
 
 #### 2.5 Enter the Name of the Topic
 
@@ -73,7 +73,7 @@ A pop-up window will appear for configuring the new topic. Follow these steps:
 
 - Enter the name of the topic as "manufacturing_data_stream" in the "Name" field.
 
-![Screen_Topic Name](/images/Screen_Topic Name.png)
+![Screen_Topic_Name](/images/Screen_Topic_Name.png)
 
 - Click on "Create with defaults" to create the topic with default settings. This ensures that the topic is created with the necessary configurations for the manufacturing data stream simulation.
 
