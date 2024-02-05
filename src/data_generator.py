@@ -4,7 +4,11 @@ import numpy as np
 # read the dataset into python from a GitHub URL
 url = 'https://raw.githubusercontent.com/janmayer15/manufacturing-data-stream-simulation-with-Kafka/main/data/wafer_data_sum_cpk.csv'
 df = pd.read_csv(url, delimiter=';')
+<<<<<<< HEAD
 
+=======
+# df = df.drop(columns=['Unnamed: 0'])
+>>>>>>> f04dcf31d4ad4c46f36588ddfdd73d4b5381c922
 
 def generate_message() -> dict:
     random_row = np.array(df.sample(n=1))
@@ -22,4 +26,9 @@ def generate_message() -> dict:
         'sum_sensor5': random_row[0][9],
         'sum_sensor7': random_row[0][10],
         'sum_sensor49': random_row[0][11]
+<<<<<<< HEAD
     }
+=======
+    }
+
+>>>>>>> f04dcf31d4ad4c46f36588ddfdd73d4b5381c922
