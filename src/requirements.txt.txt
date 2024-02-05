@@ -1,0 +1,7 @@
+kafka-python
+pandas
+json
+numpy
+time 
+datetime
+random
