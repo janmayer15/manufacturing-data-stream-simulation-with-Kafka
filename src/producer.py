@@ -24,7 +24,7 @@ if __name__ == '__main__':
         
         # Send it to our 'messages' topic
         print(f'Producing message @ {datetime.now()} | Message = {str(dummy_message)}')
-        producer.send('test', dummy_message)
+        producer.send('manufacturing_data_stream', dummy_message)
     
         # Sleep for a random number of seconds
         #time_to_sleep = random.randint(1, 11)
