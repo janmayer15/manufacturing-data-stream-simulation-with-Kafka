@@ -93,12 +93,16 @@ To read the latest message from the manufacturing data stream, you can use the p
 
 1. In the `/src` directory, open a Python prompt.
 
-2. Run the `read_latest_message.py` script:
+2. Run the `read_latest_message.py` or `consumer.py` script:
 
    ```bash
    python read_latest_message.py
    ```
 
+   ```bash
+   consumer.py
+   ```
+   
 This script will retrieve and display the most recent message from the "manufacturing_data_stream" Kafka topic.
 
 ## Contributing
