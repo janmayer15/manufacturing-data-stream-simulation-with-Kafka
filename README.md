@@ -89,7 +89,7 @@ Now, you have successfully set up the required Kafka topic for the manufacturing
 
 ## Reading the Latest Message
 
-To read the latest message from the manufacturing data stream, you can use the provided `read_latest_message.py` script. Here's how:
+To read the latest message from the manufacturing data stream, you can use the provided `read_latest_message.py` or `consumer.py` script. Here's how:
 
 1. In the `/src` directory, open a Python prompt.
 
